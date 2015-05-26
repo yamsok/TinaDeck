@@ -15,17 +15,16 @@ body, #container {
     border-radius:50%; /* rounded avatar */
     -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75); /* wooohouuuw box shadow, it's like a shadow but on a box, it's magical */
     box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
         }
 
 /* TINADECK ANIMATIONS, AWESOME THINGS LIKE CATS JUMPING OUT OF YOUR SCREEN ETC (not yet) */
 
-.avatar,.tweet:hover.avatar,.tweet:hover.account-link{-webkit-transition: 0.5s all;transition: 0.5s all;} /* add transition timed at the same tempo for every element that has a transition effect */
+.avatar,.tweet,.tweet.avatar,.tweet.account-link{-webkit-transition: 0.5s all;transition: 0.5s all;} /* add transition timed at the same tempo for every element that has a transition effect */
  .tweet:hover .avatar {
         -webkit-box-shadow: 0px 0px 2px 5px rgba(150,150,250,0.75); /* wow when you hover a tweet the border color change to blue become bigger, amazing */
         box-shadow: 0px 0px 2px 5px rgba(150,150,200,0.75);
     }
+.tweet .account-link {text-shadow: 0px 0px 0px rgba(150,150,200,1);}
 .tweet:hover .account-link {text-shadow: 0px 0px 1px rgba(150,150,200,1);} /* waaah and it also create a fancy shadow effect on the TN/@ of the guy who tweeted it */
 .compose-account, .prf-img {
     border-radius:50%;
